@@ -21,7 +21,8 @@ const Navbar = () => {
         <h1 className='text-red-600 text-4xl font-bold cursor-pointer'>NETFLIX</h1>
       </Link>
       {user?.email ?
-        <div>
+        <div className='flex items-center justify-end w-full'>
+          <h2 className='text-white m-5'>Welcome {user.email}</h2>
           <Link to='/account'>
             <button className='text-white pr-4'>Account</button>
           </Link>
